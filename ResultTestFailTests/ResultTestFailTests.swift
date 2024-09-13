@@ -17,6 +17,11 @@ final class ResultTestFailTests: XCTestCase {
         }
         
         await store.send(.onAppear)
+        
+        // Build fails
         await store.receive(\.voidResult.success)
+        
+        // Build succeed
+        // await store.receive(\.voidResult)
     }
 }

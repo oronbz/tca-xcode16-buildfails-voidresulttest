@@ -15,7 +15,12 @@ struct Feature: Reducer {
     
     enum Action {
         case onAppear
+        
+        // Build fails
         case voidResult(Result<Void, Error>)
+        
+        // Build succeed
+        // case voidResult(Result<String, Error>)
     }
     
     var body: some Reducer<State, Action> {
