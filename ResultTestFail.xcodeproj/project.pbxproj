@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		82C2F9692C9420B10071939F /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 82C2F9682C9420B10071939F /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		82C2F94B2C9420620071939F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		824688712C9420F100BCA938 /* ResultTestFail.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ResultTestFail.xctestplan; sourceTree = "<group>"; };
 		82C2F93A2C9420600071939F /* ResultTestFail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResultTestFail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C2F94A2C9420620071939F /* ResultTestFailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResultTestFailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C2F9542C9420620071939F /* ResultTestFailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResultTestFailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,11 +45,6 @@
 			path = ResultTestFailTests;
 			sourceTree = "<group>";
 		};
-		82C2F9572C9420620071939F /* ResultTestFailUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ResultTestFailUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C2F9692C9420B10071939F /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +76,9 @@
 		82C2F9312C9420600071939F = {
 			isa = PBXGroup;
 			children = (
+				824688712C9420F100BCA938 /* ResultTestFail.xctestplan */,
 				82C2F93C2C9420600071939F /* ResultTestFail */,
 				82C2F94D2C9420620071939F /* ResultTestFailTests */,
-				82C2F9572C9420620071939F /* ResultTestFailUITests */,
 				82C2F93B2C9420600071939F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +113,7 @@
 			);
 			name = ResultTestFail;
 			packageProductDependencies = (
+				82C2F9682C9420B10071939F /* ComposableArchitecture */,
 			);
 			productName = ResultTestFail;
 			productReference = 82C2F93A2C9420600071939F /* ResultTestFail.app */;
@@ -153,9 +155,6 @@
 			dependencies = (
 				82C2F9562C9420620071939F /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				82C2F9572C9420620071939F /* ResultTestFailUITests */,
-			);
 			name = ResultTestFailUITests;
 			packageProductDependencies = (
 			);
@@ -195,6 +194,9 @@
 			);
 			mainGroup = 82C2F9312C9420600071939F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				82C2F9672C9420B10071939F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 82C2F93B2C9420600071939F /* Products */;
 			projectDirPath = "";
@@ -552,6 +554,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82C2F9672C9420B10071939F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82C2F9682C9420B10071939F /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82C2F9672C9420B10071939F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82C2F9322C9420600071939F /* Project object */;
 }
